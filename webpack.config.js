@@ -18,16 +18,16 @@ const PATHS = {
 const common = merge([
     {
         entry: {
-            'index': PATHS.source + '/index.js',            
+            bundle: PATHS.source + '/index.js', 
+            styles: PATHS.source + '/styles/main.scss'      
         },
         output: {
             path: PATHS.build,
-            filename: 'js/[name].js'
+            filename: 'js/[name].js',           
         },
         plugins: [
             new HtmlWebpackPlugin({
-                filename: 'index.html',
-                chunks: ['index', 'common'],
+                filename: 'index.html',                
                 template: PATHS.source + '/index.pug',
                 options: {
                     pretty:true,
@@ -39,7 +39,10 @@ const common = merge([
             new webpack.ProvidePlugin({
                 $: 'jquery',
                 jQuery: 'jquery'
-            })
+            }),
+            new webpack.LoaderOptionsPlugin({
+                minimize: false 
+              }),
         ]
     },
     pug(),
@@ -51,7 +54,8 @@ module.exports = function(env) {
         return merge([
             common,
             extractCSS(),
-            uglifyJS()
+            uglifyJS(),
+           
         ]);
     }
     if (env === 'development'){
@@ -59,7 +63,7 @@ module.exports = function(env) {
             common,
             devserver(),
             sass(),
-            css()
+            css(),            
         ])
     }
 };
