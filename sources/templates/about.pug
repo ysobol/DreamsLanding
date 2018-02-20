@@ -1,2 +1,13 @@
-block title
-    | About page
+include ../mixins/line
+include ../mixins/aboutItem
+section.about
+  .container
+    .about-title.title.section-title
+      h1 About us
+    .about-line
+      +line()
+    .about-items-container
+      +aboutItem('sources/styles/images/about-1.png', 'beautiful designs')
+      +aboutItem('sources/styles/images/about-2.png', 'web development')
+      +aboutItem('sources/styles/images/about-3.png', '2/7 support')
+      +aboutItem('sources/styles/images/about-4.png', '2/7 support')

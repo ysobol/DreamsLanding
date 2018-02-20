@@ -1,4 +1,4 @@
-nav.nav
+.nav
   - var menuItems = ['home', 'services', 'portfolio', 'about', 'team', 'contact']
     each item, key in menuItems
-      a.nav__link(href='#', data-link=menuItems[key])=item
+      a.nav__link.title(href='#', data-link=menuItems[key])=item

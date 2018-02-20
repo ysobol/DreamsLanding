@@ -1,0 +1,12 @@
+include ../constants/constants
+mixin experticeItem(imgUrl, title)
+  span.expertice-item
+    .img-container
+      img.experticeImage(src=imgUrl, alt=title)
+    .text-container
+      .expertice-title=title
+      .expertice-description
+        +dummyDescription()
+
+
+

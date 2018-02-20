@@ -1,0 +1,18 @@
+include ../constants/constants
+include ../mixins/experticeItem
+.container.expertices-container
+  .left-container
+    .sub-title.title
+      h1 Other expertise
+    .sub-description
+      +dummyDescription()
+    .expertice-item-container
+      +experticeItem('sources/styles/images/setupIcon.png', 'Custom setup')
+      +experticeItem('sources/styles/images/starIcon.png', 'All stur support team')
+      +experticeItem('sources/styles/images/cloudIcon.png', 'Cloud control')
+      +experticeItem('sources/styles/images/lockIcon.png', 'Top notch security')
+    .expertice-footer
+  .right-container
+    .main-image-container
+      img.mainExperticeImage(src='sources/styles/images/experticeMainImage.png', alt='main-expertice-img')
+

@@ -1,21 +1,15 @@
+include ../mixins/coreItem
+include ../mixins/line
 section.services
   .container
-    h1 Core Services
-  - var dummyDescription='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.'
-  - var servicesCollection=[
-      {
-          imgUrl='',
-          title='beautiful designs',
-          description=dummyDescription,
-      },
-      {
-          imgUrl='',
-          title='web development',
-          description=dummyDescription,
-      },
-      {
-          imgUrl='',
-          title='2/7 support',
-          description=dummyDescription,
-      }
-      ]
+    .services-title.title.section-title
+      h1 Core Services
+    .services-line
+      +line()
+    .core-items-container
+      +coreItem('sources/styles/images/DreamsSection1Logo1.png', 'beautiful designs')
+      +coreItem('sources/styles/images/DreamsSection1Logo2.png', 'web development')
+      +coreItem('sources/styles/images/DreamsSection1Logo3.png', '2/7 support')
+     
+      
+      

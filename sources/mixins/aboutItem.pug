@@ -1,0 +1,9 @@
+include ../constants/constants
+mixin aboutItem(date, title, imgUrl)
+  .about-item-container
+    .about-item-date=date
+    .about-item-title=title     
+    .about-item-description
+      +dummyDescription()
+  .about-item-img-container
+    img.coreImage(src=imgUrl, alt=title)
