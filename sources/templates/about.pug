@@ -1,13 +1,15 @@
 include ../mixins/line
 include ../mixins/aboutItem
+include ../mixins/aboutMoreButton
 section.about
   .container
     .about-title.title.section-title
       h1 About us
-    .about-line
+    .about-line.line
       +line()
     .about-items-container
-      +aboutItem('sources/styles/images/about-1.png', 'beautiful designs')
-      +aboutItem('sources/styles/images/about-2.png', 'web development')
-      +aboutItem('sources/styles/images/about-3.png', '2/7 support')
-      +aboutItem('sources/styles/images/about-4.png', '2/7 support')
+      +aboutItem('july 2010', 'our humble beginnings', 'sources/styles/images/about-1.png',  'left')
+      +aboutItem('january 2011', 'facing sturtup battles', 'sources/styles/images/about-2.png', 'right')
+      +aboutItem('december 2012', 'enter the dark days', 'sources/styles/images/about-3.png',  'left')
+      +aboutItem('february 2014', 'our triumph', 'sources/styles/images/about-4.png',  'right')
+      +moreButton('our story continues ...')

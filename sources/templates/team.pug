@@ -1,2 +1,15 @@
-block title
-    | Team page
+include ../mixins/line
+include ../constants/constants
+include ../mixins/teamItem
+section.team
+  .container
+    .team-title.title.section-title
+      h1 awesome team
+    .team-line.line
+      +line()
+    .team-items-container 
+      +teamItem('sources/styles/images/team-1.png', 'Jimmy Letterman', 'Marketer')
+      +teamItem('sources/styles/images/team-2.png', 'Rico Massimo', 'Coder')
+      +teamItem('sources/styles/images/team-3.png', 'Lisa Mason', 'Graphic Designer')
+    .team-footer
+      +dummyDescription()

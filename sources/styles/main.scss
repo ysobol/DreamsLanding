@@ -1,10 +1,130 @@
-// @import "../../node_modules/font-awesome/scss/font-awesome";
-// @import "../../node_modules/normalize.scss/normalize";
-
 @import "global/variables";
 @import "global/base";
 @import "global/common";
 @import "/menu";
+
+
+.team {
+
+    .team-items-container{
+
+        //width: 80%;
+    display: flex;
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+
+
+    .team-item{
+
+        display: inline-block;
+        margin: auto;
+
+        .team-item-img-container{
+            img{
+            height: 300px;
+            width: 300px;
+            
+            }
+
+            
+        }
+
+        .team-item-container{
+            text-align: center;
+
+            .team-item-name{
+                font-weight: bold;
+                padding: 10px 5px 10px 5px;
+            }
+
+        }
+
+       
+
+        .team-item-social{
+            margin: auto;
+            width: 160px;
+
+            img{                
+                padding: 5px;
+            }
+
+        }
+
+        
+    }
+}
+
+.team-footer{
+
+    text-align: center;
+
+}
+
+}
+
+
+
+.about{
+    .about-items-container{
+        margin: 10px 10px 10px 10px;         
+        .circle-more-button {
+            margin: 50px auto;            
+        }
+    }
+}
+
+.about-item {
+    padding-top:50px;    
+    width: 800px;  
+    margin: auto;  
+
+    .about-item-title{
+        margin-top: 5px;
+    }   
+
+    .about-item-container{  
+        width: 300px;
+        margin-top: 15px;
+        display: inline-block;
+
+        &.right{
+            float: right;
+            text-align: left
+        }
+
+            &.left{ 
+                float: left;
+                text-align: right;
+            } 
+    }    
+
+    .about-item-img-container{         
+        width: 200px;        
+        display: inline-block;
+        &.right { 
+            margin-left: 300px;
+        }  
+    } 
+}
+
+
+
+
+
+.circle-more-button{
+    background-color: cyan;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 24px;    
+    align-items: center; 
+    color: white;
+    padding: 35px 20px;       
+}
+
+
 
 .logo{
 
@@ -49,12 +169,7 @@
     .services-title {
         text-align: center;        
         
-    }
-    .services-line{
-        width: 10%;
-            margin: 0 auto;
-
-    }
+    }   
     .core-items-container{
         display: flex;
     }
