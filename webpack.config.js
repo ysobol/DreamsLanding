@@ -12,27 +12,26 @@ const images = require('./webpack/images');
 
 const PATHS = {
     source: path.join(__dirname, 'sources'),
-    build: path.join(__dirname, 'build')
+    build: path.join(__dirname, 'build'),
 };
 
-const common = merge([
-    {
+const common = merge([{
         entry: {
-            bundle: PATHS.source + '/index.js', 
-            styles: PATHS.source + '/styles/main.scss'      
+            bundle: PATHS.source + '/index.js',
+            styles: PATHS.source + '/styles/main.scss',
         },
         output: {
             path: PATHS.build,
-            filename: 'js/[name].js',           
+            filename: 'js/[name].js',
         },
         plugins: [
             new HtmlWebpackPlugin({
-                filename: 'index.html',                
+                filename: 'index.html',
                 template: PATHS.source + '/index.pug',
                 options: {
-                    pretty:true,
+                    pretty: true,
                 }
-            }),          
+            }),
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common'
             }),
@@ -41,8 +40,8 @@ const common = merge([
                 jQuery: 'jquery'
             }),
             new webpack.LoaderOptionsPlugin({
-                minimize: false 
-              }),
+                minimize: false
+            }),
         ]
     },
     pug(),
@@ -50,30 +49,20 @@ const common = merge([
 ]);
 
 module.exports = function(env) {
-    if (env === 'production'){
+    if (env === 'production') {
         return merge([
             common,
             extractCSS(),
             uglifyJS(),
-           
+
         ]);
     }
-    if (env === 'development'){
+    if (env === 'development') {
         return merge([
             common,
             devserver(),
             sass(),
-            css(),            
+            css(),
         ])
     }
 };
-
-
-
-
-
-
-
-
-
-

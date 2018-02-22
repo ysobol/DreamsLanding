@@ -1,2 +1,30 @@
-block title
-    | Footer page
+include ../mixins/line
+include ../mixins/contactItem
+include ../mixins/elipsedButton
+section.footer
+  .footer-main-container
+    .container.footer-container
+      .footer-left-panel
+        .footer-title.title.section-title
+          h1 contact us
+        .footer-description
+          p Don't be shy, drop us an email and say hello! We are a really nice bunch of peaple :)
+        .footer-contacts-container
+          +contactItem('sources/styles/images/contr-ph.png','(416) 555-0000')
+          +contactItem('sources/styles/images/contr-t.png','@dreams')
+          +contactItem('sources/styles/images/contr-g.png','plus.com/dreams')
+          +contactItem('sources/styles/images/contr-e.png','hello@dreams.com')
+          +contactItem('sources/styles/images/contr-f.png','facebook.com/dreams')
+          +contactItem('sources/styles/images/contr-p.png','pinterest.com/dreams')
+      .footer-right-panel
+        .submit-form-container
+          input.form-name(type="text", placeholder="Your Name*")
+          input.form-email(type="text", placeholder="Your E-mail*")
+          textarea.form-message(rows="8", cols="1" placeholder="Your Message*")
+          +elipsedButton('send message')
+    .footer-foter-description
+      +line()
+      p &copy; 2014 Dreams By FreebiesXpress
+    
+
+    
