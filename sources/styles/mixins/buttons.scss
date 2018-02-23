@@ -1,0 +1,30 @@
+.button {
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    background: cyan;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 140px;
+    cursor: pointer;
+    &:hover {
+        background: lighten(cyan, 20%);
+    }
+}
+
+.circle-more-button {
+    background-color: cyan;
+    height: 180px;
+    width: 180px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 24px;
+    align-items: center;
+    color: white;
+    padding: 35px 20px;
+}

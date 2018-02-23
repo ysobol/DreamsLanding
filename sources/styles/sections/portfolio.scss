@@ -1,0 +1,28 @@
+.portfolio {
+    .portfolio-main-container {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        .portfolio-description-container {
+            display: flex;
+            margin-left: 70px;
+            .portfolio-desc-left-panel {
+                .portfolio-title.title {
+                    text-align: left;
+                }
+                .portfolio-description-main {}
+                .portfolio-description-additional {
+                    margin-top: 40px;
+                }
+                .portfolio-description-items-container {}
+            }
+            .portfolio-desc-right-panel {}
+        }
+        .portfolio-gallery-container {
+            img {
+                width: 465px;
+                height: 350px;
+            }
+        }
+    }
+}

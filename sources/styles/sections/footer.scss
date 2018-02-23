@@ -1,0 +1,59 @@
+.footer {
+    background: #1c1c1c;
+    color: white;
+    .footer-main-container {
+        display: flex;
+        padding-top: 50px;
+        flex-direction: column;
+        .footer-container {
+            display: table;
+            .footer-left-panel {
+                padding-right: 50px;
+                display: table-cell;
+                .footer-title {
+                    text-align: left;
+                }
+                .footer-contacts-container {
+                    flex-direction: column;
+                    display: flex;
+                    flex-wrap: wrap;
+                    height: 170px;
+                    .contact-item {
+                        display: table;
+                        margin-top: 20px;
+                        .contract-item-content,
+                        .contact-item-img-container {
+                            vertical-align: middle;
+                            display: table-cell;
+                        }
+                        .contract-item-content {
+                            padding-left: 5px;
+                        }
+                    }
+                }
+            }
+            .footer-right-panel {
+                display: table-cell;
+                .submit-form-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+                input,
+                textarea {
+                    width: 400px;
+                    margin-top: 20px;
+                    min-height: 40px;
+                    padding: 5px;
+                    color: black;
+                }
+                a {
+                    margin-top: 20px;
+                }
+            }
+        }
+        .footer-foter-description {
+            text-align: center;
+            padding-top: 40px;
+        }
+    }
+}
