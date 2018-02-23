@@ -3,10 +3,8 @@ include ../mixins/aboutItem
 include ../mixins/aboutMoreButton
 section.about
   .container
-    .about-title.title.section-title
-      h1 About us
-    .about-line.line
-      +line()
+    .title.title-with-bottom-line
+      h1 About us   
     .about-items-container
       +aboutItem('july 2010', 'our humble beginnings', 'sources/styles/images/about-1.png',  'left')
       +aboutItem('january 2011', 'facing sturtup battles', 'sources/styles/images/about-2.png', 'right')

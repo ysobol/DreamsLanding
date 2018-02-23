@@ -1,12 +1,12 @@
 .banner {
     .container {
-        background: white url('../styles/images/dreams-background-img.png') no-repeat;
+        background: #d3d3d36e url('../styles/images/dreams-background-img.png') center/cover no-repeat;
         height: min-content;
     }
     text-align: center;
     color: white;
     &-title {
-        font-size: 30px;
+        font-size: 1.8rem;
         margin: 5% auto;
         padding: 0px 20%;
     }
@@ -16,7 +16,7 @@
     }
     &-description {
         margin: 5% auto;
-        font-size: 24px;
+        font-size: 1.5rem;
         padding: 0px 30%;
     }
 }

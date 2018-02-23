@@ -4,14 +4,13 @@ body {
     font-family: $ff-main;
     font-size: 1rem;
     line-height: 1.2;
-    //background: white url('../styles/images/dreams-background-img.png') no-repeat 50% 0%;
 }
 
 html {
     box-sizing: border-box;
     background: white;
     @media (max-width: 600px) {
-        font-size: 14px;
+        font-size: 14px; //todo
     }
 }
 

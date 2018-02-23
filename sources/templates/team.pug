@@ -3,10 +3,8 @@ include ../constants/constants
 include ../mixins/teamItem
 section.team
   .container
-    .team-title.title.section-title
-      h1 awesome team
-    .team-line.line
-      +line()
+    .title.title-with-bottom-line
+      h1 awesome team    
     .team-items-container 
       +teamItem('sources/styles/images/team-1.png', 'Jimmy Letterman', 'Marketer')
       +teamItem('sources/styles/images/team-2.png', 'Rico Massimo', 'Coder')

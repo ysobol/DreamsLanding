@@ -6,11 +6,20 @@
 .title {
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.section-title {
-    font-size: 24px;
-    text-align: center;
+    font-size: 1.5rem;
+    &-with-bottom-line {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        &:after {
+            content: '';
+            bottom: 5px;
+            height: 2px;
+            background: cyan;
+            width: 10%;
+            position: absolute;
+        }
+    }
 }
 
 section {
@@ -23,9 +32,4 @@ section {
 p {
     padding: 0px;
     margin: 0px;
-}
-
-.line {
-    width: 10%;
-    margin: 0 auto;
 }

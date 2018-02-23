@@ -6,8 +6,12 @@
         .core-items-container {
             display: flex;
             padding: 50px;
+            justify-content: space-around;
+            flex-wrap: wrap;
             .item-container {
-                margin: 20px;
+                width: 25%;
+                margin: 0;
+                text-align: center;
                 .coreImage {
                     margin: auto;
                     display: block;
@@ -15,12 +19,8 @@
                     height: 100px;
                     width: 100px;
                 }
-                .core-item-title {
-                    text-align: center;
-                }
-                .core-item-description {
-                    text-align: center;
-                }
+                .core-item-title {}
+                .core-item-description {}
             }
         }
     }

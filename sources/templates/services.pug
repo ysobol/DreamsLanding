@@ -4,10 +4,8 @@ include ../mixins/experticeItem
 include ../mixins/elipsedButton
 section.services
   .container
-    .services-title.title.section-title
-      h1 Core Services
-    .services-line.line
-      +line()
+    .title.title-with-bottom-line
+      h1 Core Services   
     .core-container      
       .core-items-container
         +coreItem('sources/styles/images/DreamsSection1Logo1.png', 'beautiful designs')
@@ -15,7 +13,7 @@ section.services
         +coreItem('sources/styles/images/DreamsSection1Logo3.png', '2/7 support')     
     .expertice-container
       .expertice-left-container
-        .sub-title.title.section-title
+        .sub-title.title
           h1 Other expertise
         .sub-description
           +dummyDescription()
