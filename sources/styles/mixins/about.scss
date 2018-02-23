@@ -2,23 +2,23 @@
     padding-top: 50px;
     width: 800px;
     margin: auto;
-    .about-item-title {
+    &-title {
         margin-top: 5px;
     }
-    .about-item-container {
+    &-container {
         width: 300px;
         margin-top: 15px;
         display: inline-block;
         &.right {
             float: right;
-            text-align: left
+            text-align: left;
         }
         &.left {
             float: left;
             text-align: right;
         }
     }
-    .about-item-img-container {
+    &-img-container {
         width: 200px;
         display: inline-block;
         &.right {

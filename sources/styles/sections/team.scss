@@ -1,5 +1,5 @@
 .team {
-    .team-items-container {
+    &-items-container {
         display: flex;
         margin: auto;
         padding: 50px 0px 50px 0px;
@@ -28,7 +28,7 @@
             }
         }
     }
-    .team-footer {
+    &-footer {
         text-align: center;
     }
 }
