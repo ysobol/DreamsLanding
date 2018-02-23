@@ -1,10 +1,14 @@
 .banner {
+    .container {
+        background: white url('../styles/images/dreams-background-img.png') no-repeat;
+        height: min-content;
+    }
+    text-align: center;
+    color: white;
     &-title {
-        font-size: 48px;
-        color: white;
+        font-size: 30px;
         margin: 5% auto;
-        width: 70%;
-        text-align: center;
+        padding: 0px 20%;
     }
     &-splitter {
         width: 10%;
@@ -12,9 +16,7 @@
     }
     &-description {
         margin: 5% auto;
-        width: 60%;
-        text-align: center;
-        font-size: 40px;
-        color: white;
+        font-size: 24px;
+        padding: 0px 30%;
     }
 }

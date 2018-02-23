@@ -10,6 +10,9 @@
             .footer-left-panel {
                 padding-right: 50px;
                 display: table-cell;
+                .footer-description {
+                    width: 450px;
+                }
                 .footer-title {
                     text-align: left;
                 }
