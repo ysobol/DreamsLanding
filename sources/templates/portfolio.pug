@@ -1,2 +1,25 @@
-block title
-    | Portfolio page
+include ../constants/constants
+include ../mixins/experticeItem
+section.portfolio  
+  .portfolio-main-container.container
+    .portfolio-description-container
+      .portfolio-desc-left-panel
+        .portfolio-title.title.section-title
+          h1 amazing portfolio
+        .portfolio-description-main
+          +dummyDescription
+        .portfolio-description-additional
+          +dummyDescription
+        .portfolio-description-items-container
+          +experticeItem('sources/styles/images/settings.png', 'sail away your worries')
+          +experticeItem('sources/styles/images/star.png', 'all-star sdupport team')
+          +experticeItem('sources/styles/images/pie.png', 'fully integrated service')
+      .portfolio-desc-right-panel 
+        img(src='sources/styles/images/smartphone.png', alt='portf-3')      
+    .portfolio-gallery-container
+      img(src='sources/styles/images/portf-1.png', alt='portf-1')
+      img(src='sources/styles/images/portf-2.png', alt='portf-2')
+      img(src='sources/styles/images/portf-3.png', alt='portf-3')
+      img(src='sources/styles/images/portf-4.png', alt='portf-4')
+      img(src='sources/styles/images/portf-5.png', alt='portf-5')
+      img(src='sources/styles/images/portf-6.png', alt='portf-6')
