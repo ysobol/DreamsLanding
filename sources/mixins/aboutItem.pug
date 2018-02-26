@@ -2,8 +2,8 @@ include ../constants/constants
 mixin aboutItem(date, title, imgUrl, className)  
   .about-item    
     .about-item-container(class=className)
-      .about-item-date.title=date
-      .about-item-title.title=title     
+      .title-sub.title-sub-bold=date
+      .title-sub.title-sub-bold=title     
       .about-item-description
         +dummyDescription()
     .about-item-img-container(class=className) 

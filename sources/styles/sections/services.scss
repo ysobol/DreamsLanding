@@ -21,6 +21,9 @@
                 }
                 .core-item-title {}
                 .core-item-description {}
+                @media (max-width:650px) {
+                    width: 100%;
+                }
             }
         }
     }

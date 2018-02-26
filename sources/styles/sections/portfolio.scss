@@ -7,10 +7,6 @@
             display: flex;
             margin-left: 70px;
             .portfolio-desc-left-panel {
-                .portfolio-title.title {
-                    text-align: left;
-                }
-                .portfolio-description-main {}
                 .portfolio-description-additional {
                     margin-top: 40px;
                 }
@@ -19,6 +15,9 @@
             .portfolio-desc-right-panel {}
         }
         .portfolio-gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
             img {
                 width: 465px;
                 height: 350px;

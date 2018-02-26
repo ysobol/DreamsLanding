@@ -1,13 +1,31 @@
 include ../mixins/line
 include ../constants/constants
 include ../mixins/teamItem
+-
+  var teamCollection= 
+  [
+    {
+      url:'sources/styles/images/team-1.png', 
+      name:'Jimmy Letterman',
+      profession:'Marketer'
+    },
+    {
+      url:'sources/styles/images/team-2.png',
+      name:'Rico Massimo',
+      profession:'Coder',
+    },
+    {
+      url:'sources/styles/images/team-3.png',
+      name:'Lisa Mason',
+      profession:'Graphic Designer'
+    }
+  ]
 section.team
   .container
-    .title.title-with-bottom-line
+    .title-main.title-with-bottom-line
       h1 awesome team    
-    .team-items-container 
-      +teamItem('sources/styles/images/team-1.png', 'Jimmy Letterman', 'Marketer')
-      +teamItem('sources/styles/images/team-2.png', 'Rico Massimo', 'Coder')
-      +teamItem('sources/styles/images/team-3.png', 'Lisa Mason', 'Graphic Designer')
+    .team-items-container
+      each item in teamCollection 
+        +teamItem(item.url, item.name, item.profession)     
     .team-footer
       +dummyDescription()
