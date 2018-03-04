@@ -1,6 +1,9 @@
 .container {
     max-width: 1400px;
     margin: auto;
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
 }
 
 .title {
@@ -38,7 +41,9 @@ section {
     }
 }
 
-p {
+p,
+h1 {
     padding: 0px;
     margin: 0px;
+    margin-bottom: 25px;
 }

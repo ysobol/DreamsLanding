@@ -4,8 +4,7 @@ mixin aboutItem(date, title, imgUrl, className)
     .about-item-container(class=className)
       .title-sub.title-sub-bold=date
       .title-sub.title-sub-bold=title     
-      .about-item-description
-        +dummyDescription()
+      .about-item-description=DUMMY_DESCRIPTION
     .about-item-img-container(class=className) 
       img.coreImage(src=imgUrl, alt=title)
     

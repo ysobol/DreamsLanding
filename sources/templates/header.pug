@@ -1,7 +1,12 @@
-.header.header-container
-  .logo
-    img(src="sources/styles/images/DreamsLogo.png", alt='logoPicture')
-  .menu-container
-    include menu
-
-
+include ../constants/constants
+header.header  
+  .container
+    .header.header-container
+      .logo
+        img(src="sources/styles/images/dreams-logo.png", alt='logo-picture')
+      .menu-container
+        include menu
+    .header-title.title.title-with-bottom-line
+      h1 #{HEADER_TITLE}    
+    .header-description
+      h4 #{HEADER_DESCRIPTION}

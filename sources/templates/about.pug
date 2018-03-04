@@ -1,13 +1,11 @@
-include ../mixins/line
+include ../constants/constants
 include ../mixins/aboutItem
 include ../mixins/aboutMoreButton
 section.about
   .container
     .title-main.title-with-bottom-line
-      h1 About us   
+      h1 #{ABOUT_TITLE}   
     .about-items-container
-      +aboutItem('july 2010', 'our humble beginnings', 'sources/styles/images/about-1.png',  'left')
-      +aboutItem('january 2011', 'facing sturtup battles', 'sources/styles/images/about-2.png', 'right')
-      +aboutItem('december 2012', 'enter the dark days', 'sources/styles/images/about-3.png',  'left')
-      +aboutItem('february 2014', 'our triumph', 'sources/styles/images/about-4.png',  'right')
-      +moreButton('our story continues ...')
+      each item in ABOUT_COLLECTION
+        +aboutItem(item.date, item.title, item.url, item.class)      
+      +moreButton(MORE_BUTTON_TITLE)

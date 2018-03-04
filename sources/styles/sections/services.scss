@@ -42,11 +42,32 @@
                 height: 320px;
                 .expertice-item {
                     width: 400px;
+                    @media (max-width: $tab) {
+                        width: auto;
+                    }
+                }
+                @media (max-width: $tab) {
+                    height: auto;
                 }
             }
             .expertice-footer {
-                padding-left: 10px;
+                padding: 10px 0px 0px 10px;
             }
+            @media (max-width: $tab) {
+                padding-left: 50px;
+            }
+        }
+        .expertice-right-container {
+            @media (max-width: $tab) {
+                padding-top: 50px;
+            }
+            @media (max-width: 1035px) {
+                display: none;
+            }
+        }
+        @media (max-width: 610px) {
+            padding-right: 10px;
+            padding-left: 10px;
         }
     }
 }

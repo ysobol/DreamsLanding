@@ -1,4 +1,8 @@
-.nav
-  - var menuItems = ['home', 'services', 'portfolio', 'about', 'team', 'contact']
-    each item, key in menuItems
-      a.nav__link.title-sub(href='#', data-link=menuItems[key])=item
+include ../constants/constants
+div.menuIcon(onclick='showMenu()') 
+  .menuIconItem
+  .menuIconItem
+  .menuIconItem
+.nav.isHidden  
+  each item in MENU_COLLECTION
+    a.nav__link.title-sub(href='#', data-link=item)=item

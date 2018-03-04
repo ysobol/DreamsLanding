@@ -1,32 +1,28 @@
+include ../constants/constants
 include ../mixins/coreItem
-include ../mixins/line
-include ../mixins/experticeItem
+include ../mixins/descriptionItem
 include ../mixins/elipsedButton
 section.services
   .container
     .title-main.title-with-bottom-line
-      h1 Core Services   
+      h1 #{SERVICES_TITLE}  
     .core-container      
       .core-items-container
-        +coreItem('sources/styles/images/DreamsSection1Logo1.png', 'beautiful designs')
-        +coreItem('sources/styles/images/DreamsSection1Logo2.png', 'web development')
-        +coreItem('sources/styles/images/DreamsSection1Logo3.png', '2/7 support')     
+        each item in CORE_COLLECTION 
+          +coreItem(item.url, item.label)             
     .expertice-container
       .expertice-left-container
         .title-main
-          h1 Other expertise
-        .sub-description
-          +dummyDescription()
+          h1 #{EXPERTICE_TITLE}
+        .sub-description=DUMMY_DESCRIPTION
         .expertice-item-container
-          +experticeItem('sources/styles/images/settings.png', 'Custom setup')
-          +experticeItem('sources/styles/images/star.png', 'All stur support team')
-          +experticeItem('sources/styles/images/cloud.png', 'Cloud control')
-          +experticeItem('sources/styles/images/lock.png', 'Top notch security')
+          each item in EXPERTICE_COLLECTION 
+            +descriptionItem(item.url, item.label)          
         .expertice-footer
-          +elipsedButton('learn more')        
+          +elipsedButton(SERVICE_MORE_BUTTON)        
       .expertice-right-container
         .image-container
-          img.mainExperticeImage(src='sources/styles/images/experticeMainImage.png', alt='main-expertice-img')
+          img(src='sources/styles/images/expertice-main-image.png', alt='expertice-main-image')
      
       
       

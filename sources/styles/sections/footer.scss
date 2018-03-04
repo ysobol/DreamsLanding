@@ -6,15 +6,23 @@
         padding-top: 50px;
         flex-direction: column;
         .footer-container {
-            display: table;
+            display: flex;
+            flex-wrap: wrap;
             .footer-left-panel {
-                padding-right: 50px;
-                display: table-cell;
+                padding-right: 50px; //display: table-cell;
                 .footer-description {
                     width: 450px;
+                    @media (max-width: 1000px) {
+                        width: auto;
+                        padding: 0px 20px;
+                        text-align: center;
+                    }
                 }
                 .footer-title {
                     text-align: left;
+                    @media (max-width: 1000px) {
+                        text-align: center;
+                    }
                 }
                 .footer-contacts-container {
                     flex-direction: column;
@@ -32,31 +40,54 @@
                         .contract-item-content {
                             padding-left: 5px;
                         }
+                        @media (max-width:1000px) {
+                            margin-right: 20px;
+                        }
                     }
+                    @media (max-width:1000px) {
+                        margin: 0px 140px;
+                    }
+                    @media (max-width:700px) {
+                        height: auto;
+                        margin: auto;
+                        width: fit-content;
+                    }
+                }
+                @media (max-width:1000px) {
+                    padding-right: 0px;
+                    margin: auto;
                 }
             }
             .footer-right-panel {
-                display: table-cell;
                 .submit-form-container {
                     display: flex;
                     flex-direction: column;
+                    input,
+                    textarea {
+                        width: 400px;
+                        margin-top: 20px;
+                        min-height: 40px;
+                        padding: 5px;
+                        color: black;
+                    }
+                    a {
+                        margin-top: 20px;
+                    }
+                    @media (max-width:450px) {
+                        input,
+                        textarea {
+                            width: 250px;
+                        }
+                    }
                 }
-                input,
-                textarea {
-                    width: 400px;
-                    margin-top: 20px;
-                    min-height: 40px;
-                    padding: 5px;
-                    color: black;
-                }
-                a {
-                    margin-top: 20px;
+                @media (max-width:1000px) {
+                    margin: auto;
                 }
             }
         }
-        .footer-foter-description {
-            text-align: center;
-            padding-top: 40px;
-        }
+    }
+    .footer-foter-description {
+        text-align: center;
+        padding-top: 40px;
     }
 }

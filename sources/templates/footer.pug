@@ -1,4 +1,4 @@
-include ../mixins/line
+include ../constants/constants
 include ../mixins/contactItem
 include ../mixins/elipsedButton
 footer.footer
@@ -6,25 +6,21 @@ footer.footer
     .container.footer-container
       .footer-left-panel
         .footer-title.title
-          h1 contact us
+          h1 #{FOOTER_TITLE}
         .footer-description
-          p Don't be shy, drop us an email and say hello! We are a really nice bunch of peaple :)
+          p #{FOOTER_DESCRIPTION}
         .footer-contacts-container
-          +contactItem('sources/styles/images/contr-ph.png','(416) 555-0000')
-          +contactItem('sources/styles/images/contr-t.png','@dreams')
-          +contactItem('sources/styles/images/contr-g.png','plus.com/dreams')
-          +contactItem('sources/styles/images/contr-e.png','hello@dreams.com')
-          +contactItem('sources/styles/images/contr-f.png','facebook.com/dreams')
-          +contactItem('sources/styles/images/contr-p.png','pinterest.com/dreams')
-      .footer-right-panel
-        .submit-form-container
-          input.form-name(type="text", placeholder="Your Name*")
-          input.form-email(type="text", placeholder="Your E-mail*")
-          textarea.form-message(rows="8", cols="1" placeholder="Your Message*")
-          +elipsedButton('send message')
+           each item in CONTRACTS_COLLECTION
+            +contactItem(item.url,item.title)          
+      .footer-right-panel        
+          form(method="post", action="#").submit-form-container
+            input.form-name(type="text", placeholder=FOOTER_FORM_NAME_INPUT_PLACEHOLDER)
+            input.form-email(type="text", placeholder=FOOTER_FORM_EMAIL_INPUT_PLACEHOLDER)
+            textarea.form-message(rows="8", cols="1" placeholder=FOOTER_FORM_MESSAGE_INPUT_PLACEHOLDER)
+            +elipsedButton(SEND_MESSAGE_BUTTON_TITLE)
     .footer-foter-description
-      +line()
-      p &copy; 2014 Dreams By FreebiesXpress
+      hr(size="2" color="cyan")
+      p &copy; #{FOOTER_COPY_TEXT}
     
 
     

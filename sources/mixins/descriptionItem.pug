@@ -1,12 +1,11 @@
 include ../constants/constants
-mixin experticeItem(imgUrl, title)
+mixin descriptionItem(imgUrl, title)
   .expertice-item
     .img-container
       img.experticeImage(src=imgUrl, alt=title)
     .text-container
       .title.title-sub=title
-      .expertice-description
-        +dummyDescription()
+      .expertice-description=DUMMY_DESCRIPTION
 
 
 
