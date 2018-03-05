@@ -24,8 +24,8 @@
                 }
             }
             .team-item-social {
-                margin: auto;
-                width: 160px;
+                display: flex;
+                justify-content: center;
                 img {
                     padding: 5px;
                 }

@@ -19,8 +19,6 @@
                     height: 100px;
                     width: 100px;
                 }
-                .core-item-title {}
-                .core-item-description {}
                 @media (max-width:650px) {
                     width: 100%;
                 }
@@ -42,26 +40,26 @@
                 height: 320px;
                 .expertice-item {
                     width: 400px;
-                    @media (max-width: $tab) {
+                    @media (max-width: $large-tab) {
                         width: auto;
                     }
                 }
-                @media (max-width: $tab) {
+                @media (max-width: $large-tab) {
                     height: auto;
                 }
             }
             .expertice-footer {
                 padding: 10px 0px 0px 10px;
             }
-            @media (max-width: $tab) {
-                padding-left: 50px;
+            @media (max-width: $large-tab) {
+                padding: 0px 50px;
             }
         }
         .expertice-right-container {
-            @media (max-width: $tab) {
+            @media (max-width: $large-tab) {
                 padding-top: 50px;
             }
-            @media (max-width: 1035px) {
+            @media (max-width: $ipad) {
                 display: none;
             }
         }

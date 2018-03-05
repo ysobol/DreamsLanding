@@ -7,7 +7,6 @@ const devserver = require('./webpack/devserver');
 const sass = require('./webpack/sass');
 const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
-const uglifyJS = require('./webpack/js.uglify');
 const images = require('./webpack/images');
 
 const PATHS = {
@@ -35,10 +34,6 @@ const common = merge([{
             new webpack.optimize.CommonsChunkPlugin({
                 name: 'common'
             }),
-            new webpack.ProvidePlugin({
-                $: 'jquery',
-                jQuery: 'jquery'
-            }),
             new webpack.LoaderOptionsPlugin({
                 minimize: false
             }),
@@ -53,8 +48,6 @@ module.exports = function(env) {
         return merge([
             common,
             extractCSS(),
-            uglifyJS(),
-
         ]);
     }
     if (env === 'development') {

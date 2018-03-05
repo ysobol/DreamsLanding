@@ -2,7 +2,7 @@ include ../constants/constants
 include ../mixins/coreItem
 include ../mixins/descriptionItem
 include ../mixins/elipsedButton
-section.services
+section.services(id="services")
   .container
     .title-main.title-with-bottom-line
       h1 #{SERVICES_TITLE}  
@@ -22,7 +22,7 @@ section.services
           +elipsedButton(SERVICE_MORE_BUTTON)        
       .expertice-right-container
         .image-container
-          img(src='sources/styles/images/expertice-main-image.png', alt='expertice-main-image')
+          img(src=require("./styles/images/expertice-main-image.png"), alt='expertice-main-image')
      
       
       

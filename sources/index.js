@@ -9,4 +9,5 @@
             classList.add(isHiddentClass);
         }
     };
+
 }());

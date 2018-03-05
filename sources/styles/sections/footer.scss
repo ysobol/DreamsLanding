@@ -9,10 +9,10 @@
             display: flex;
             flex-wrap: wrap;
             .footer-left-panel {
-                padding-right: 50px; //display: table-cell;
+                padding-right: 50px;
                 .footer-description {
                     width: 450px;
-                    @media (max-width: 1000px) {
+                    @media (max-width: $tab) {
                         width: auto;
                         padding: 0px 20px;
                         text-align: center;
@@ -20,7 +20,7 @@
                 }
                 .footer-title {
                     text-align: left;
-                    @media (max-width: 1000px) {
+                    @media (max-width: $tab) {
                         text-align: center;
                     }
                 }
@@ -40,11 +40,11 @@
                         .contract-item-content {
                             padding-left: 5px;
                         }
-                        @media (max-width:1000px) {
+                        @media (max-width:$tab) {
                             margin-right: 20px;
                         }
                     }
-                    @media (max-width:1000px) {
+                    @media (max-width:$tab) {
                         margin: 0px 140px;
                     }
                     @media (max-width:700px) {
@@ -53,7 +53,7 @@
                         width: fit-content;
                     }
                 }
-                @media (max-width:1000px) {
+                @media (max-width:$tab) {
                     padding-right: 0px;
                     margin: auto;
                 }
@@ -69,18 +69,15 @@
                         min-height: 40px;
                         padding: 5px;
                         color: black;
+                        @media (max-width: $min-mobile) {
+                            width: 250px;
+                        }
                     }
                     a {
                         margin-top: 20px;
                     }
-                    @media (max-width:450px) {
-                        input,
-                        textarea {
-                            width: 250px;
-                        }
-                    }
                 }
-                @media (max-width:1000px) {
+                @media (max-width:$tab) {
                     margin: auto;
                 }
             }

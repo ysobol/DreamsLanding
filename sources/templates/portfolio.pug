@@ -1,6 +1,6 @@
 include ../constants/constants
 include ../mixins/descriptionItem
-section.portfolio  
+section.portfolio(id="portfolio")  
   .portfolio-main-container.container
     .portfolio-description-container
       .portfolio-desc-left-panel
@@ -12,9 +12,9 @@ section.portfolio
           each item in PORTFOLIO_COLLECTION
             +descriptionItem(item.url, item.title)         
       .portfolio-desc-right-panel 
-        img(src='sources/styles/images/smartphone.png', alt='smartphone')      
+        img(src='./styles/images/smartphone.png', alt='smartphone')      
     .portfolio-gallery-container     
       while GALLERY_INDEX <= GALLERY_LENGTH     
-        img(src='sources/styles/images/portf-'+GALLERY_INDEX+'.png', alt='portf-'+GALLERY_INDEX++)  
+        img(src=require('./styles/images/portf-'+GALLERY_INDEX+'.png'), alt='portf-'+GALLERY_INDEX++)  
 
     

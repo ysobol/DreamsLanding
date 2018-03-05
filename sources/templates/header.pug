@@ -1,9 +1,9 @@
 include ../constants/constants
-header.header  
+header.header(id='home')  
   .container
     .header.header-container
       .logo
-        img(src="sources/styles/images/dreams-logo.png", alt='logo-picture')
+        img(src=require("./styles/images/dreams-logo.png"), alt='logo-picture')
       .menu-container
         include menu
     .header-title.title.title-with-bottom-line

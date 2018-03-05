@@ -1,8 +1,32 @@
 .about {
     &-items-container {
-        margin: 10px 10px 10px 10px;
+        margin: 10px;
         .circle-more-button {
             margin: 50px auto;
+        }
+        @media (max-width:$almostIphoneX) {
+            display: flex;
+            flex-direction: column;
+        }
+        @media (min-width:$almostIphoneX) {
+             :nth-child(even) {
+                .about-item-container {
+                    float: left;
+                    text-align: right;
+                }
+                .about-item-img-container {
+                    margin-left: 0px;
+                }
+            }
+             :nth-child(odd) {
+                .about-item-container {
+                    float: right;
+                    text-align: left;
+                }
+                .about-item-img-container {
+                    margin-left: 300px;
+                }
+            }
         }
     }
 }

@@ -4,15 +4,14 @@
         flex-direction: column;
         .portfolio-description-container {
             display: flex;
-            margin-left: 70px;
+            margin: 0px 50px;
             .portfolio-desc-left-panel {
                 .portfolio-description-additional {
                     margin-top: 40px;
                 }
-                .portfolio-description-items-container {}
             }
             .portfolio-desc-right-panel {
-                @media (max-width: 1035px) {
+                @media (max-width: $ipad) {
                     display: none;
                 }
             }
@@ -24,6 +23,9 @@
             img {
                 width: 465px;
                 height: 350px;
+                @media (max-width: 465px) {
+                    width: 100%;
+                }
             }
         }
     }

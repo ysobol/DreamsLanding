@@ -10,7 +10,7 @@ html {
     box-sizing: border-box;
     background: white;
     @media (max-width: 600px) {
-        font-size: 14px; //todo
+        font-size: 14px;
     }
 }
 
@@ -18,9 +18,4 @@ html {
 *:before,
 *:after {
     box-sizing: inherit;
-}
-
-ul,
-ol {
-    list-style-type: none;
 }
