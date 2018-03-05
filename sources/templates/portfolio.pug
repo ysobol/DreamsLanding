@@ -12,7 +12,7 @@ section.portfolio(id="portfolio")
           each item in PORTFOLIO_COLLECTION
             +descriptionItem(item.url, item.title)         
       .portfolio-desc-right-panel 
-        img(src='./styles/images/smartphone.png', alt='smartphone')      
+        img(src=require('./styles/images/smartphone.png'), alt='smartphone')      
     .portfolio-gallery-container     
       while GALLERY_INDEX <= GALLERY_LENGTH     
         img(src=require('./styles/images/portf-'+GALLERY_INDEX+'.png'), alt='portf-'+GALLERY_INDEX++)  

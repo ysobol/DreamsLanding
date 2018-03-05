@@ -5,22 +5,23 @@
     &-items-container {
         display: flex;
         margin: auto;
-        padding: 50px 0px 50px 0px;
+        padding: 80px 0px 50px 0px;
         flex-wrap: wrap;
+        width: 60%;
         .team-item {
             display: inline-block;
             margin: auto;
             .team-item-img-container {
                 img {
-                    height: 300px;
-                    width: 300px;
+                    height: 220px;
+                    width: 220px;
                 }
             }
             .team-item-container {
                 text-align: center;
                 .team-item-name {
                     font-weight: bold;
-                    padding: 10px 5px 10px 5px;
+                    padding: 20px 5px 10px 5px;
                 }
             }
             .team-item-social {
@@ -34,5 +35,6 @@
     }
     &-footer {
         text-align: center;
+        padding: 0px 30px 80px 30px;
     }
 }

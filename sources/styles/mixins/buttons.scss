@@ -3,28 +3,28 @@
     border-radius: 30px;
     text-decoration: none;
     color: white;
-    background: cyan;
+    background: $buttonLineColor;
     text-transform: uppercase;
     text-align: center;
     justify-content: center;
     display: flex;
     align-items: center;
-    height: 40px;
-    width: 140px;
+    height: 60px;
+    width: 160px;
     cursor: pointer;
     &:hover {
-        background: lighten(cyan, 20%);
+        background: lighten($buttonLineColor, 20%);
     }
 }
 
 .circle-more-button {
-    background-color: cyan;
+    background-color: $buttonLineColor;
     height: 180px;
     width: 180px;
     border-radius: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     align-items: center;
     color: white;
-    padding: 35px 20px;
+    padding: 40px 40px;
 }

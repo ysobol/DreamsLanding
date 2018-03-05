@@ -12,6 +12,9 @@
                 width: 25%;
                 margin: 0;
                 text-align: center;
+                .title-sub {
+                    padding-top: 10px;
+                }
                 .coreImage {
                     margin: auto;
                     display: block;
@@ -37,7 +40,8 @@
                 flex-direction: column;
                 display: flex;
                 flex-wrap: wrap;
-                height: 320px;
+                height: 350px;
+                padding-top: 25px;
                 .expertice-item {
                     width: 400px;
                     @media (max-width: $large-tab) {

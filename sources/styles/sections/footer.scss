@@ -9,7 +9,7 @@
             display: flex;
             flex-wrap: wrap;
             .footer-left-panel {
-                padding-right: 50px;
+                padding-right: 80px;
                 .footer-description {
                     width: 450px;
                     @media (max-width: $tab) {
@@ -20,6 +20,7 @@
                 }
                 .footer-title {
                     text-align: left;
+                    font-size: 1.3rem;
                     @media (max-width: $tab) {
                         text-align: center;
                     }
@@ -64,10 +65,10 @@
                     flex-direction: column;
                     input,
                     textarea {
-                        width: 400px;
+                        width: 460px;
                         margin-top: 20px;
-                        min-height: 40px;
-                        padding: 5px;
+                        min-height: 45px;
+                        padding: 10px;
                         color: black;
                         @media (max-width: $min-mobile) {
                             width: 250px;

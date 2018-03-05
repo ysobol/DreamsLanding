@@ -10,7 +10,7 @@
     &-main {
         text-transform: uppercase;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     &-sub {
         text-transform: uppercase;
@@ -25,10 +25,10 @@
         justify-content: center;
         &:after {
             content: '';
-            bottom: 5px;
-            height: 2px;
-            background: cyan;
-            width: 10%;
+            height: 1px;
+            bottom: 0px;
+            background: $buttonLineColor;
+            width: 8%;
             position: absolute;
         }
     }

@@ -1,5 +1,5 @@
 .about-item {
-    padding-top: 50px;
+    padding-top: 80px;
     width: 800px;
     margin: auto;
     &-title {
@@ -9,6 +9,9 @@
         width: 300px;
         margin-top: 15px;
         display: inline-block;
+    }
+    &-description {
+        padding-top: 15px;
     }
     &-img-container {
         width: 200px;
