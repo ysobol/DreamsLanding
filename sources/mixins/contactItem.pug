@@ -1,7 +1,7 @@
 mixin contactItem(imgUrl, content)
   .contact-item
     .contact-item-img-container 
-      img.contact-img(src=imgUrl)
+      img.contact-img(src=imgUrl, alt=content)
     i(class=iconClass)
     .contract-item-content=content
     

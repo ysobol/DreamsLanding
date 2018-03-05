@@ -85,7 +85,17 @@
         }
     }
     .footer-foter-description {
-        text-align: center;
         padding-top: 40px;
+        &:before {
+            content: '';
+            height: 1px;
+            background: white;
+            width: 100%;
+            position: absolute;
+        }
+        p {
+            text-align: center;
+            padding-top: 20px;
+        }
     }
 }

@@ -4,7 +4,7 @@ include ../mixins/aboutMoreButton
 section.about(id="about")
   .container
     .title-main.title-with-bottom-line
-      h1 #{ABOUT_TITLE}   
+      h2 #{ABOUT_TITLE}   
     .about-items-container
       each item in ABOUT_COLLECTION
         +aboutItem(item.date, item.title, item.url)      

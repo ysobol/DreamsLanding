@@ -6,7 +6,7 @@ footer.footer(id='contact')
     .container.footer-container
       .footer-left-panel
         .footer-title.title-main
-          h1 #{FOOTER_TITLE}
+          h2 #{FOOTER_TITLE}
         .footer-description
           p #{FOOTER_DESCRIPTION}
         .footer-contacts-container
@@ -18,8 +18,7 @@ footer.footer(id='contact')
             input.form-email(type="text", placeholder=FOOTER_FORM_EMAIL_INPUT_PLACEHOLDER)
             textarea.form-message(rows="8", cols="1" placeholder=FOOTER_FORM_MESSAGE_INPUT_PLACEHOLDER)
             +elipsedButton(SEND_MESSAGE_BUTTON_TITLE)
-    .footer-foter-description
-      hr(size="1" color="white")
+    .footer-foter-description     
       p &copy; #{FOOTER_COPY_TEXT}
     
 
