@@ -16,13 +16,11 @@
         }
         display: none;
     }
-    .nav {
-        display: flex;
-        flex-direction: row;
+    nav {
         padding-top: 15px;
         padding-right: 20px;
         .nav__link {
-            padding: 0px 10px 10px 10px;
+            margin: 0px 10px 10px 10px;
             text-decoration: none;
             color: white;
             @media (max-width: $tab) {
@@ -34,6 +32,7 @@
             }
         }
         @media (max-width:$tab) {
+            display: flex;
             flex-direction: column;
             justify-content: flex-end;
             text-align: right;

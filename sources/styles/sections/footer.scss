@@ -1,4 +1,11 @@
 .footer {
+    .container {
+        max-width: 1400px;
+        margin: auto;
+        @media (max-width: $tab) {
+            width: 100%;
+        }
+    }
     background: #1c1c1c;
     color: white;
     &-main-container {

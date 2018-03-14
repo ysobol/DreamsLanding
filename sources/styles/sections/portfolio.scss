@@ -21,10 +21,11 @@
             flex-wrap: wrap;
             justify-content: center;
             img {
-                width: 465px;
-                height: 350px;
-                @media (max-width: 465px) {
-                    width: 100%;
+                height: calc(100% * (1/3));
+                width: calc(100% * (1/3));
+                @media (max-width: $tab) {
+                    height: calc(100% * (1/2));
+                    width: calc(100% * (1/2));
                 }
             }
         }

@@ -1,28 +1,12 @@
 include ../constants/constants
 include ../mixins/coreItem
-include ../mixins/descriptionItem
-include ../mixins/elipsedButton
 section.services(id="services")
-  .container
-    .title-main.title-with-bottom-line
-      h2 #{SERVICES_TITLE}  
-    .core-container      
-      .core-items-container
-        each item in CORE_COLLECTION 
-          +coreItem(item.url, item.label)             
-    .expertice-container
-      .expertice-left-container
-        .title-main
-          h2 #{EXPERTICE_TITLE}
-        .sub-description=DUMMY_DESCRIPTION
-        .expertice-item-container
-          each item in EXPERTICE_COLLECTION 
-            +descriptionItem(item.url, item.label)          
-        .expertice-footer
-          +elipsedButton(SERVICE_MORE_BUTTON)        
-      .expertice-right-container
-        .image-container
-          img(src=require("./styles/images/expertice-main-image.png"), alt='expertice-main-image')
+  .title-main.title-with-bottom-line
+    h2 #{SERVICES_TITLE}
+  .core-items-container
+    each item in CORE_COLLECTION 
+      +coreItem(item.url, item.label)           
+   
      
       
       

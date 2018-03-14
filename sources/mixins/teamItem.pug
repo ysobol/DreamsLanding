@@ -7,7 +7,8 @@ mixin teamItem(teamObject)
       .team-item-profesion=teamObject.profession
     .team-item-social
       each item in teamObject.socials
-        img.team-social(src=item.url, alt=item.name)   
+        a(href=item.socialUrl, target="_blank")
+          img.team-social(src=item.url, alt=item.name)   
       
          
       

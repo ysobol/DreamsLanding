@@ -2,7 +2,7 @@ include ../constants/constants
 header.header(id='home')  
   .container
     .header.header-container
-      .logo
+      a.logo(href='#home', data-link='home')
         img(src=require("./styles/images/dreams-logo.png"), alt='logo-picture')
       .menu-container
         include menu

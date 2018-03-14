@@ -3,6 +3,6 @@ div.menuIcon(onclick='showMenu()')
   .menuIconItem
   .menuIconItem
   .menuIconItem
-.nav.isHidden  
+nav.isHidden  
   each item in MENU_COLLECTION
-    a.nav__link.title-sub(href='#'+item, data-link=item, onclick='navigate(event)')=item
+    a.nav__link.title-sub(href='#'+item, data-link=item)=item
