@@ -11,14 +11,17 @@
             width: 25%;
             margin: 0;
             text-align: center;
-            .title-sub {
-                padding-top: 10px;
+            .img-container {
+                margin-bottom: 10px;
+                .coreImage {
+                    display: inline-block;
+                    padding: 10px;
+                    height: 100px;
+                    width: 100px;
+                }
             }
-            .coreImage {
-                display: inline-block;
-                padding: 10px;
-                height: 100px;
-                width: 100px;
+            .title-sub {
+                font-weight: bold;
             }
             @media (max-width:650px) {
                 width: 100%;

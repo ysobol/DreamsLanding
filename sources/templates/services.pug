@@ -1,11 +1,10 @@
 include ../constants/constants
 include ../mixins/coreItem
-section.services(id="services")
-  .title-main.title-with-bottom-line
-    h2 #{SERVICES_TITLE}
+section.services(id="services")  
+  h2.title-main.title-with-bottom-line #{SERVICES_TITLE}
   .core-items-container
     each item in CORE_COLLECTION 
-      +coreItem(item.url, item.label)           
+      +coreItem(item.imgName, item.label)           
    
      
       

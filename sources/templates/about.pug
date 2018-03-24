@@ -1,10 +1,9 @@
 include ../constants/constants
 include ../mixins/aboutItem
 include ../mixins/aboutMoreButton
-section.about(id="about")  
-  .title-main.title-with-bottom-line
-    h2 #{ABOUT_TITLE}   
-  .about-items-container
-    each item in ABOUT_COLLECTION
-      +aboutItem(item.date, item.title, item.url)      
-    +moreButton(MORE_BUTTON_TITLE)
+section.about(id="about")
+  h2.title-main.title-with-bottom-line #{ABOUT_TITLE}   
+  .div(id='about-items-container').about-items-container
+    each item in ABOUT_COLLECTION.data      
+      +aboutItem(item.date, item.title, item.imgName)      
+  +moreButton(MORE_BUTTON_TITLE)

@@ -1,0 +1,59 @@
+[{
+        "imgName": "team-1.png",
+        "name": "Jimmy Letterman",
+        "profession": "Marketer",
+        "socials": [{
+                "socialimgName": "https://twitter.com",
+                "name": "twiter",
+                "imgName": "team-tv.png"
+            },
+            {
+                "socialimgName": "https://www.facebook.com",
+                "name": "facebook",
+                "imgName": "team-f.png"
+            },
+            {
+                "socialimgName": "https://www.pinterest.com",
+                "name": "pinterest",
+                "imgName": "team-p.png"
+            }
+        ]
+    },
+    {
+        "imgName": "team-2.png",
+        "name": "Rico Massimo",
+        "profession": "Coder",
+        "socials": [{
+                "socialimgName": "https://twitter.com",
+                "name": "twiter",
+                "imgName": "team-tv.png"
+            },
+            {
+                "socialimgName": "https://www.facebook.com",
+                "name": "facebook",
+                "imgName": "team-f.png"
+            },
+            {
+                "socialimgName": "https://plus.google.com",
+                "name": "google",
+                "imgName": "team-g.png"
+            }
+        ]
+    },
+    {
+        "imgName": "team-3.png",
+        "name": "Lisa Mason",
+        "profession": "Graphic Designer",
+        "socials": [{
+                "socialimgName": "https://www.facebook.com",
+                "name": "facebook",
+                "imgName": "team-f.png"
+            },
+            {
+                "socialimgName": "https://www.pinterest.com",
+                "name": "pinterest",
+                "imgName": "team-p.png"
+            }
+        ]
+    }
+]

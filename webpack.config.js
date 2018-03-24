@@ -1,3 +1,4 @@
+require('babel-polyfill');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -8,6 +9,7 @@ const sass = require('./webpack/sass');
 const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
 const images = require('./webpack/images');
+const babel = require('./webpack/babel');
 
 const PATHS = {
     source: path.join(__dirname, 'sources'),
@@ -16,7 +18,7 @@ const PATHS = {
 
 const common = merge([{
         entry: {
-            bundle: PATHS.source + '/index.js',
+            bundle: ['babel-polyfill', PATHS.source + '/index.js'],
             styles: PATHS.source + '/styles/main.scss',
         },
         output: {
@@ -40,6 +42,7 @@ const common = merge([{
         ]
     },
     pug(),
+    babel(),
     images()
 ]);
 

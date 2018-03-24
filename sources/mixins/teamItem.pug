@@ -1,14 +1,15 @@
+include ../constants/constants
 mixin teamItem(teamObject)  
   .team-item
     .team-item-img-container
-      img.team-profile-img(src=teamObject.url, alt='team'+teamObject.name)    
+      img.team-profile-img(src=require('./styles/images/'+teamObject.imgName), alt='team'+teamObject.name)    
     .team-item-container
       .team-item-name=teamObject.name
       .team-item-profesion=teamObject.profession
     .team-item-social
       each item in teamObject.socials
         a(href=item.socialUrl, target="_blank")
-          img.team-social(src=item.url, alt=item.name)   
+          img.team-social(src=require('./styles/images/'+item.imgName), alt=item.name)   
       
          
       

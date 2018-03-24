@@ -9,16 +9,12 @@
                 height: 5px;
                 background-color: white;
                 margin: 5px 0;
-                &:first-child {
-                    padding-top: 0px;
-                }
             }
         }
         display: none;
     }
     nav {
-        padding-top: 15px;
-        padding-right: 20px;
+        margin: 15px 20px 0px 0px;
         .nav__link {
             margin: 0px 10px 10px 10px;
             text-decoration: none;

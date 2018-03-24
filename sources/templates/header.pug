@@ -1,12 +1,12 @@
 include ../constants/constants
-header.header(id='home')  
+header.header(id='home')   
   .container
     .header.header-container
       a.logo(href='#home', data-link='home')
         img(src=require("./styles/images/dreams-logo.png"), alt='logo-picture')
       .menu-container
         include menu
-    .header-title.title-main.title-with-bottom-line
-      h2 #{HEADER_TITLE}    
-    .header-description
-      h4 #{HEADER_DESCRIPTION}
+    .header-text        
+      h2.header-title.title-main.title-with-bottom-line #{HEADER_TITLE}    
+      .header-description
+        h4 #{HEADER_DESCRIPTION}

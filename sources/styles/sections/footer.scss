@@ -15,6 +15,7 @@
         .footer-container {
             display: flex;
             flex-wrap: wrap;
+            margin-bottom: 20px;
             .footer-left-panel {
                 padding-right: 80px;
                 .footer-description {
@@ -28,6 +29,7 @@
                 .footer-title {
                     text-align: left;
                     font-size: 1.3rem;
+                    margin-bottom: 40px;
                     @media (max-width: $tab) {
                         text-align: center;
                     }
@@ -92,17 +94,16 @@
         }
     }
     .footer-foter-description {
-        padding-top: 40px;
         &:before {
             content: '';
-            height: 1px;
+            height: 0.1rem;
             background: white;
             width: 100%;
             position: absolute;
         }
         p {
+            margin: 20px 0px 10px 0px;
             text-align: center;
-            padding-top: 20px;
         }
     }
 }

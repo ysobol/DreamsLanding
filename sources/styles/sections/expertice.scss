@@ -5,6 +5,9 @@
         .sub-title {
             text-align: left;
         }
+        .sub-description {
+            margin-bottom: 25px;
+        }
         .expertice-left-container {
             padding: 50px 0px 0px 100px;
             .expertice-item-container {
@@ -12,7 +15,6 @@
                 display: flex;
                 flex-wrap: wrap;
                 height: 350px;
-                padding-top: 25px;
                 .expertice-item {
                     width: 400px;
                     @media (max-width: $large-tab) {
@@ -32,7 +34,7 @@
         }
         .expertice-right-container {
             @media (max-width: $large-tab) {
-                padding-top: 50px;
+                margin-top: 50px;
             }
             @media (max-width: $ipad) {
                 display: none;

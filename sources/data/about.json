@@ -1,0 +1,23 @@
+{
+    "data": [{
+            "date": " july 2010",
+            "title": " our humble beginnings",
+            "imgName": "about-1.png"
+        },
+        {
+            "date": " january 2011",
+            "title": " facing sturtup battles",
+            "imgName": "about-2.png"
+        },
+        {
+            "date": " december 2012",
+            "title": " enter the dark days",
+            "imgName": "about-3.png"
+        },
+        {
+            "date": " february 2014",
+            "title": " our triumph",
+            "imgName": "about-4.png"
+        }
+    ]
+}

@@ -1,7 +1,8 @@
-mixin contactItem(imgUrl, content)
+include ../constants/constants
+mixin contactItem(imgName, content)
   .contact-item
     .contact-item-img-container 
-      img.contact-img(src=imgUrl, alt=content)
+      img.contact-img(src=require('./styles/images/'+imgName), alt=content)
     i(class=iconClass)
     .contract-item-content=content
     

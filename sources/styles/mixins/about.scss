@@ -1,24 +1,40 @@
 .about-item {
-    padding-top: 80px;
     width: 800px;
     margin: auto;
     &-title {
         margin-top: 5px;
     }
+    .label-title {
+        margin-bottom: 15px;
+    }
     &-container {
         width: 300px;
         margin-top: 15px;
         display: inline-block;
+        @media (max-width: $almostIphoneX) {
+            margin-top: 0px;
+        }
     }
     &-description {
-        padding-top: 15px;
+        color: $descriptionColor;
     }
     &-img-container {
-        width: 200px;
-        display: inline-block;
+        .coreImage {
+            width: 200px;
+            height: 200px;
+        }
         @media (max-width: $almostIphoneX) {
             width: auto;
         }
+    }
+    &:after {
+        content: '';
+        height: 100px;
+        bottom: 0px;
+        background: $descriptionColor;
+        width: 0.1rem;
+        display: block;
+        margin: 0 auto;
     }
     @media (max-width:$almostIphoneX) {
         display: flex;

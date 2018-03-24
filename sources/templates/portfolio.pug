@@ -3,14 +3,13 @@ include ../mixins/descriptionItem
 section.portfolio(id="portfolio")  
   .portfolio-main-container
     .portfolio-description-container
-      .portfolio-desc-left-panel
-        .title-main
-          h2 #{PORTFOLIO_TITLE}
+      .portfolio-desc-left-panel        
+        h2.title-main #{PORTFOLIO_TITLE}
         .portfolio-description-main=DUMMY_DESCRIPTION
         .portfolio-description-additional=DUMMY_DESCRIPTION
         .portfolio-description-items-container
           each item in PORTFOLIO_COLLECTION
-            +descriptionItem(item.url, item.title)         
+            +descriptionItem(item.imgName, item.title)         
       .portfolio-desc-right-panel 
         img(src=require('./styles/images/smartphone.png'), alt='smartphone')      
     section.portfolio-gallery-container     

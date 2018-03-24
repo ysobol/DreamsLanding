@@ -1,3 +1,4 @@
 mixin moreButton(title)
-  .circle-more-button.title-sub.title-sub-bold=title
+  a(id='about-more-button').hideSpinner.circle-more-button.title-sub.title-sub-bold=title  
+    img(src=require("./styles/images/spinner.gif"), alt='spinner-picture')
     

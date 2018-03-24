@@ -1,7 +1,7 @@
 include ../constants/constants
-mixin coreItem(imgUrl, title)
+mixin coreItem(imgName, title)
   .item-container
     .img-container
-      img.coreImage(src=imgUrl, alt=title)
-    .title-sub.title-sub-bold=title
+      img.coreImage(src=require('./styles/images/'+imgName), alt=title)
+    h3.title-sub.title-sub-bold=title
     .core-item-description=DUMMY_DESCRIPTION

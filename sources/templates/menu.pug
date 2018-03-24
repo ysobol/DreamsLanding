@@ -1,8 +1,8 @@
 include ../constants/constants
-div.menuIcon(onclick='showMenu()') 
+div(id='menuButton').menuIcon 
   .menuIconItem
   .menuIconItem
   .menuIconItem
-nav.isHidden  
+nav(id='nav').isHidden  
   each item in MENU_COLLECTION
     a.nav__link.title-sub(href='#'+item, data-link=item)=item

@@ -3,13 +3,12 @@ include ../mixins/descriptionItem
 include ../mixins/elipsedButton
 section.expertice(id="expertice")  
   .expertice-container
-      .expertice-left-container
-        .title-main
-          h2 #{EXPERTICE_TITLE}
+      .expertice-left-container        
+        h2.title-main #{EXPERTICE_TITLE}
         .sub-description=DUMMY_DESCRIPTION
         .expertice-item-container
           each item in EXPERTICE_COLLECTION 
-            +descriptionItem(item.url, item.label)          
+            +descriptionItem(item.imgName, item.label)          
         .expertice-footer
           +elipsedButton(SERVICE_MORE_BUTTON)        
       .expertice-right-container
