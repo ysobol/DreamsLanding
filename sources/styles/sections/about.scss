@@ -1,8 +1,10 @@
 .about {
+    .title-main {
+        margin-bottom: 50px;
+    }
     &-items-container {
-        margin: 10px;
         .circle-more-button {
-            margin: 90px auto;
+            margin: 0px auto;
         }
         @media (max-width:$almostIphoneX) {
             display: flex;
@@ -28,6 +30,19 @@
                 .about-item-img-container {
                     margin-left: 0px;
                 }
+            }
+        }
+    }
+    .circle-more-button {
+        margin: 0 auto;
+        &.hideSpinner {
+            img {
+                display: none;
+            }
+        }
+        &.showSpinner {
+            img {
+                width: 100%;
             }
         }
     }

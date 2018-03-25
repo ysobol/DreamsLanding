@@ -27,4 +27,9 @@
     align-items: center;
     color: white;
     padding: 40px 40px;
+    cursor: pointer;
+    display: block;
+    &:hover {
+        background: lighten($buttonLineColor, 20%);
+    }
 }

@@ -1,10 +1,10 @@
 include ../constants/constants
-mixin aboutItem(date, title, imgUrl, className)  
+mixin aboutItem(date, title, imgName) 
   .about-item    
-    .about-item-container(class=className)
-      .title-sub.title-sub-bold=date
-      .title-sub.title-sub-bold=title     
+    .about-item-container
+      h3.title-sub.title-sub-bold=date
+      h3.title-sub.title-sub-bold.label-title=title     
       .about-item-description=DUMMY_DESCRIPTION
-    .about-item-img-container(class=className) 
-      img.coreImage(src=imgUrl, alt=title)
+    .about-item-img-container
+      img.coreImage(src=require("./styles/images/"+imgName), alt=title)
     

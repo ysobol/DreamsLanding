@@ -1,75 +1,29 @@
 .services {
-    display: flex;
-    flex-direction: column;
-    .core-container {
+    .core-items-container {
         background: white;
-        .core-items-container {
-            display: flex;
-            padding: 50px;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            .item-container {
-                width: 25%;
-                margin: 0;
-                text-align: center;
-                .title-sub {
-                    padding-top: 10px;
-                }
+        display: flex;
+        padding: 50px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .item-container {
+            width: 25%;
+            margin: 0;
+            text-align: center;
+            .img-container {
+                margin-bottom: 10px;
                 .coreImage {
-                    margin: auto;
-                    display: block;
+                    display: inline-block;
                     padding: 10px;
                     height: 100px;
                     width: 100px;
                 }
-                @media (max-width:650px) {
-                    width: 100%;
-                }
             }
-        }
-    }
-    .expertice-container {
-        background: #d3d3d36e;
-        display: flex;
-        .sub-title {
-            text-align: left;
-        }
-        .expertice-left-container {
-            padding: 50px 0px 0px 100px;
-            .expertice-item-container {
-                flex-direction: column;
-                display: flex;
-                flex-wrap: wrap;
-                height: 350px;
-                padding-top: 25px;
-                .expertice-item {
-                    width: 400px;
-                    @media (max-width: $large-tab) {
-                        width: auto;
-                    }
-                }
-                @media (max-width: $large-tab) {
-                    height: auto;
-                }
+            .title-sub {
+                font-weight: bold;
             }
-            .expertice-footer {
-                padding: 10px 0px 10px 10px;
+            @media (max-width:650px) {
+                width: 100%;
             }
-            @media (max-width: $large-tab) {
-                padding: 0px 50px;
-            }
-        }
-        .expertice-right-container {
-            @media (max-width: $large-tab) {
-                padding-top: 50px;
-            }
-            @media (max-width: $ipad) {
-                display: none;
-            }
-        }
-        @media (max-width: 610px) {
-            padding-right: 10px;
-            padding-left: 10px;
         }
     }
 }

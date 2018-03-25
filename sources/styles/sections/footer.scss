@@ -1,18 +1,27 @@
 .footer {
     background: #1c1c1c;
     color: white;
+    .container {
+        max-width: 1400px;
+        margin: auto;
+        @media (max-width: $large-tab) {
+            width: 100%;
+        }
+    }
     &-main-container {
         display: flex;
-        padding-top: 50px;
         flex-direction: column;
-        .footer-container {
+        padding-top: 50px;
+        .footer-content {
             display: flex;
             flex-wrap: wrap;
+        }
+        .footer-container {
+            margin-bottom: 20px;
             .footer-left-panel {
                 padding-right: 80px;
                 .footer-description {
-                    width: 450px;
-                    @media (max-width: $tab) {
+                    @media (max-width: $large-tab) {
                         width: auto;
                         padding: 0px 20px;
                         text-align: center;
@@ -20,8 +29,9 @@
                 }
                 .footer-title {
                     text-align: left;
-                    font-size: 1.3rem;
-                    @media (max-width: $tab) {
+                    font-size: 2.3rem;
+                    margin-bottom: 40px;
+                    @media (max-width: $large-tab) {
                         text-align: center;
                     }
                 }
@@ -41,11 +51,11 @@
                         .contract-item-content {
                             padding-left: 5px;
                         }
-                        @media (max-width:$tab) {
+                        @media (max-width:$large-tab) {
                             margin-right: 20px;
                         }
                     }
-                    @media (max-width:$tab) {
+                    @media (max-width:$large-tab) {
                         margin: 0px 140px;
                     }
                     @media (max-width:700px) {
@@ -54,7 +64,7 @@
                         width: fit-content;
                     }
                 }
-                @media (max-width:$tab) {
+                @media (max-width:$large-tab) {
                     padding-right: 0px;
                     margin: auto;
                 }
@@ -78,24 +88,23 @@
                         margin-top: 20px;
                     }
                 }
-                @media (max-width:$tab) {
+                @media (max-width:$large-tab) {
                     margin: auto;
                 }
             }
         }
     }
     .footer-foter-description {
-        padding-top: 40px;
         &:before {
             content: '';
-            height: 1px;
+            height: 0.1rem;
             background: white;
             width: 100%;
-            position: absolute;
+            display: inline-block;
         }
         p {
+            margin: 20px 0px 10px 0px;
             text-align: center;
-            padding-top: 20px;
         }
     }
 }

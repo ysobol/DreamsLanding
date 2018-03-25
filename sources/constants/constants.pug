@@ -2,164 +2,12 @@ block data
   -
     //-collections
     var MENU_COLLECTION = ['home', 'services', 'portfolio', 'about', 'team', 'contact']
-    var CORE_COLLECTION=
-    [
-     {
-      url:require('./styles/images/dreams-section1-logo1.png'),
-      label:'beautiful designs',      
-    },
-     {
-      url:require('./styles/images/dreams-section1-logo2.png'),
-      label:'web development',      
-    },
-     {
-      url:require('./styles/images/dreams-section1-logo3.png'),
-      label:'2/7 support',      
-    },
-    ]
-    var EXPERTICE_COLLECTION = 
-    [
-      {
-        url: require('./styles/images/settings.png'),
-        label: 'Custom setup',
-      },
-      {
-        url: require('./styles/images/star.png'),
-        label: 'All stur support team',
-      },
-      {
-        url: require('./styles/images/cloud.png'),
-        label: 'Cloud control',
-      },
-      {
-        url: require('./styles/images/lock.png'),
-        label: 'Top notch security',
-      }
-    ]
-    var TEAM_COLLECTION = 
-    [
-       {
-         url:require('./styles/images/team-1.png'), 
-         name:'Jimmy Letterman',
-         profession:'Marketer',
-         socials:
-         [
-           {
-             name:'twiter',
-             url:require('./styles/images/team-tv.png'),
-           },
-           {
-             name:'facebook',
-             url:require('./styles/images/team-f.png'),
-           },
-           {
-             name:'pinterest',
-             url:require('./styles/images/team-p.png'),
-           },
-          ]
-        },
-        {
-         url:require('./styles/images/team-2.png'), 
-         name:'Rico Massimo',
-         profession:'Coder',
-         socials:
-         [
-           {
-             name:'twiter',
-             url:require('./styles/images/team-tv.png'),
-           },
-           {
-             name:'facebook',
-             url:require('./styles/images/team-f.png'),
-           },
-           {
-             name:'pinterest',
-             url:require('./styles/images/team-g.png'),
-           },
-          ]
-        },
-        {
-         url:require('./styles/images/team-3.png'), 
-         name:'Lisa Mason',
-         profession:'Graphic Designer',
-         socials:
-         [           
-           {
-             name:'facebook',
-             url:require('./styles/images/team-f.png'),
-           },
-           {
-             name:'pinterest',
-             url:require('./styles/images/team-p.png'),
-           },
-          ]
-        },       
-     ]   
-    var ABOUT_COLLECTION = 
-    [
-      {
-        date:'july 2010',
-        title:'our humble beginnings',
-        url:require('./styles/images/about-1.png'),       
-      },
-     {
-        date:'january 2011',
-        title:'facing sturtup battles',
-        url:require('./styles/images/about-2.png'),       
-      },
-     {
-        date:'december 2012',
-        title:'enter the dark days',
-        url:require('./styles/images/about-3.png'),        
-      },
-      {
-        date:'february 2014',
-        title:'our triumph',
-        url:require('./styles/images/about-4.png'),        
-      },
-    ]   
-    var CONTRACTS_COLLECTION = 
-    [
-      {
-        title:'(416) 555-0000',
-        url:require('./styles/images/contr-ph.png'),       
-      },
-     {
-        title:'@dreams',
-        url:require('./styles/images/contr-t.png'),
-      },
-     {
-        title:'plus.com/dreams',
-        url:require('./styles/images/contr-g.png'),
-      },
-      {
-        title:'hello@dreams.com',
-        url:require('./styles/images/contr-e.png'),
-      },
-      {
-        title:'facebook.com/dreams',
-        url:require('./styles/images/contr-f.png'),       
-      },
-      {
-        title:'pinterest.com/dreams',
-        url:require('./styles/images/contr-p.png'),       
-      },
-    ]      
-    var PORTFOLIO_COLLECTION = 
-    [
-      {
-        url:require('./styles/images/settings.png'), 
-        title:'sail away your worries',         
-      },
-      {
-        url:require('./styles/images/star.png'),
-        title:'all-star sdupport team',      
-      },
-      {
-        url:require('./styles/images/pie.png'),
-        title:'fully integrated service',      
-      }
-    ]
+    var CORE_COLLECTION=require("./data/core.json");  
+    var EXPERTICE_COLLECTION = require("./data/expertice.json");   
+    var TEAM_COLLECTION = require("./data/team.json");    
+    var ABOUT_COLLECTION = require("./data/about.json");     
+    var CONTRACTS_COLLECTION = require("./data/contract.json");   
+    var PORTFOLIO_COLLECTION = require("./data/portfolio.json");   
 
     //-titles
     var TEAM_TITLE="awesome team"
@@ -183,6 +31,6 @@ block data
     var TITLE="Dreams Landing";
     var DUMMY_DESCRIPTION='Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scramble'
     var GALLERY_INDEX = 1;
-    var GALLERY_LENGTH = 6;
+    var GALLERY_LENGTH = 6;     
       
     

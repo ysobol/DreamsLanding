@@ -1,0 +1,17 @@
+[{
+        "imgName": "settings.png",
+        "label": "Custom setup"
+    },
+    {
+        "imgName": "star.png",
+        "label": "All stur support team"
+    },
+    {
+        "imgName": "cloud.png",
+        "label": "Cloud control"
+    },
+    {
+        "imgName": "lock.png",
+        "label": "Top notch security"
+    }
+]

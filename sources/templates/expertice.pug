@@ -1,0 +1,16 @@
+include ../constants/constants
+include ../mixins/descriptionItem
+include ../mixins/elipsedButton
+section.expertice(id="expertice")  
+  .expertice-container
+      .expertice-left-container        
+        h2.title-main #{EXPERTICE_TITLE}
+        .sub-description=DUMMY_DESCRIPTION
+        .expertice-item-container
+          each item in EXPERTICE_COLLECTION 
+            +descriptionItem(item.imgName, item.label)          
+        .expertice-footer
+          +elipsedButton(SERVICE_MORE_BUTTON)        
+      .expertice-right-container
+        .image-container
+          img(src=require("./styles/images/expertice-main-image.png"), alt='expertice-main-image')
