@@ -1,5 +1,4 @@
 import {
-    CLICKEVENT,
     NAME_CHANGED,
     EMAIL_CHANGED,
     MESSAGE_CHANGED,
@@ -10,14 +9,6 @@ import {
     LOADING,
     SHOW_MENU
 } from '../constants/constants'
-
-export const clickAction = (count = 1, delay = 0) => {
-    return {
-        type: CLICKEVENT,
-        count,
-        delay
-    };
-}
 
 export const onGetAboutMoreInfo = about => {
     return {

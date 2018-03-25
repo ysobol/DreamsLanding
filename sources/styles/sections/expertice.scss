@@ -2,14 +2,18 @@
     .expertice-container {
         background: #d3d3d36e;
         display: flex;
+        justify-content: space-between;
         .sub-title {
             text-align: left;
         }
         .sub-description {
-            margin-bottom: 25px;
+            margin: 25px 25px 0px 0px;
         }
         .expertice-left-container {
             padding: 50px 0px 0px 100px;
+            .title-main {
+                margin-bottom: 20px;
+            }
             .expertice-item-container {
                 flex-direction: column;
                 display: flex;
@@ -34,7 +38,7 @@
         }
         .expertice-right-container {
             @media (max-width: $large-tab) {
-                margin-top: 50px;
+                //margin-top: 50px;
             }
             @media (max-width: $ipad) {
                 display: none;

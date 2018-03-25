@@ -10,7 +10,7 @@ import {
     MenuButton
 } from './scripts/constants/htmlObjects'
 import * as aboutCollection from "./data/about.json";
-import { clickAction, onChangeInput, onGetAboutMoreInfo, loading, onShowMenu } from './scripts/actions/actions'
+import { onChangeInput, onGetAboutMoreInfo, loading, onShowMenu } from './scripts/actions/actions'
 import { loadMoreAboutItems, manageLoading, getMenuClasses } from './scripts/utils/utils'
 import header from './scripts/resucers/header';
 
@@ -32,8 +32,7 @@ AboutMoreButton.addEventListener('click', () => {
 });
 
 MenuButton.addEventListener('click', () => {
-    store.dispatch(onShowMenu())
-
+    store.dispatch(onShowMenu());
 });
 
 store.subscribe(() => {

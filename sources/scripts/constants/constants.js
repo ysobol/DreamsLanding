@@ -1,5 +1,4 @@
 //actions
-export const CLICKEVENT = 'CLICKEVENT';
 export const NAME_CHANGED = 'NAME_CHANGED';
 export const EMAIL_CHANGED = 'EMAIL_CHANGED';
 export const MESSAGE_CHANGED = 'MESSAGE_CHANGED';

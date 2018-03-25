@@ -1,9 +1,8 @@
 include ../constants/constants
 include ../mixins/teamItem
-section.team(id="team")
-  .container
-    h2.title-main.title-with-bottom-line #{TEAM_TITLE}    
-    .team-items-container
-      each item in TEAM_COLLECTION 
-        +teamItem(item)     
-    .team-footer=DUMMY_DESCRIPTION
+section.team(id="team") 
+  h2.title-main.title-with-bottom-line #{TEAM_TITLE}    
+  .team-items-container
+    each item in TEAM_COLLECTION 
+      +teamItem(item)     
+  .team-footer=DUMMY_DESCRIPTION

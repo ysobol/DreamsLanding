@@ -4,21 +4,22 @@ include ../mixins/elipsedButton
 footer.footer(id='contact')
   .footer-main-container
     .container.footer-container
-      .footer-left-panel        
-        h2.footer-title.title-main #{FOOTER_TITLE}
-        .footer-description
-          p #{FOOTER_DESCRIPTION}
-        .footer-contacts-container
-           each item in CONTRACTS_COLLECTION
-            +contactItem(item.imgName,item.title)          
-      .footer-right-panel        
-          form(method="post", action="#").submit-form-container
-            input.form-name(id='name', type="text", placeholder=FOOTER_FORM_NAME_INPUT_PLACEHOLDER)
-            input.form-email(id='email', type="text", placeholder=FOOTER_FORM_EMAIL_INPUT_PLACEHOLDER)
-            textarea.form-message(id='message', rows="8", cols="1" placeholder=FOOTER_FORM_MESSAGE_INPUT_PLACEHOLDER)
-            +elipsedButton(SEND_MESSAGE_BUTTON_TITLE)
-    .footer-foter-description     
-      p &copy; #{FOOTER_COPY_TEXT}
+      .footer-content
+        .footer-left-panel        
+          h2.footer-title.title-main #{FOOTER_TITLE}
+          .footer-description
+            p #{FOOTER_DESCRIPTION}
+          .footer-contacts-container
+             each item in CONTRACTS_COLLECTION
+              +contactItem(item.imgName,item.title)          
+        .footer-right-panel        
+            form(method="post", action="#").submit-form-container
+              input.form-name(id='name', type="text", placeholder=FOOTER_FORM_NAME_INPUT_PLACEHOLDER)
+              input.form-email(id='email', type="text", placeholder=FOOTER_FORM_EMAIL_INPUT_PLACEHOLDER)
+              textarea.form-message(id='message', rows="8", cols="1" placeholder=FOOTER_FORM_MESSAGE_INPUT_PLACEHOLDER)
+              +elipsedButton(SEND_MESSAGE_BUTTON_TITLE)    
+      .footer-foter-description
+        p &copy; #{FOOTER_COPY_TEXT}
     
 
     

@@ -1,11 +1,11 @@
 .portfolio {
     &-main-container {
-        display: flex;
-        flex-direction: column;
         .portfolio-description-container {
             display: flex;
-            margin: 0px 50px;
+            justify-content: space-between;
+            margin: 0px 0px 0px 50px;
             .portfolio-desc-left-panel {
+                margin-right: 100px;
                 .portfolio-description-additional {
                     margin-top: 40px;
                 }

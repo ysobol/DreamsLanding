@@ -15,41 +15,23 @@ let initialState = {
 const footer = (state = initialState, action) => {
     switch (action.type) {
         case NAME_CHANGED:
-            {
-                const name = action.value;
-
-                return Object.assign({}, state, {
-                    message: {
-                        name,
-                        email: state.message.email,
-                        message: state.message.message,
-                    }
-                });
-            }
+            return Object.assign({}, state, {
+                message: Object.assign({}, state.message, {
+                    name: action.value,
+                })
+            });
         case EMAIL_CHANGED:
-            {
-                const email = action.value;
-
-                return Object.assign({}, state, {
-                    message: {
-                        name: state.message.name,
-                        email,
-                        message: state.message.message,
-                    }
-                });
-            }
+            return Object.assign({}, state, {
+                message: Object.assign({}, state.message, {
+                    email: action.value,
+                })
+            });
         case MESSAGE_CHANGED:
-            {
-                const message = action.value;
-
-                return Object.assign({}, state, {
-                    message: {
-                        name: state.message.name,
-                        email: state.message.email,
-                        message,
-                    }
-                });
-            }
+            return Object.assign({}, state, {
+                message: Object.assign({}, state.message, {
+                    message: action.value,
+                })
+            });
         default:
             return state;
     }

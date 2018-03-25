@@ -10,11 +10,9 @@ let initialState = {
 const header = (state = initialState, action) => {
     switch (action.type) {
         case SHOW_MENU:
-            {
-                return Object.assign({}, state, {
-                    showMenu: !state.showMenu,
-                });
-            }
+            return Object.assign({}, state, {
+                showMenu: !state.showMenu,
+            });
         case HIDE_MENU:
             return Object.assign({}, state, {
                 showMenu: state.showMenu,

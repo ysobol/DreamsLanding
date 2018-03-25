@@ -18,7 +18,6 @@ const buildAboutItem = (date, title, url) => [
     "</div>"
 ].join('');
 
-
 export const loadMoreAboutItems = (aboutContainer, dataCollection, isLoading) => {
     const result = [
         aboutContainer.innerHTML

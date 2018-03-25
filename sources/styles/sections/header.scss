@@ -6,22 +6,39 @@
     text-align: center;
     color: white;
     &-text {
-        margin: 40vh auto 0px auto;
+        margin: 30vh auto 0px auto;
         .header-title {
             padding: 15px 30%;
-            font-size: 1.5rem;
+            font-size: 3.5rem;
+            @media (max-width: $tab) {
+                padding: 15px 20%;
+                font-size: 2.5rem;
+            }
+            @media (max-width: $min-mobile) {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: $tab) {
+            margin-top: 20px;
+        }
+        @media (max-width: $min-mobile) {
+            margin-top: 10px;
         }
         .header-description {
             font-size: 1.4rem;
-            padding: 20px 30%;
+            padding: 0px 37%;
+            @media (max-width: $min-mobile) {
+                padding: 0px 20%;
+            }
         }
     }
     .header-container {
         display: flex;
         justify-content: space-between;
-        padding: 30px 30px 0px 30px;
-        @media (max-width: $min-mobile) {
+        padding: 50px 70px 0px 100px;
+        @media (max-width: $tab) {
             margin: 0px 5px;
+            padding: 30px 10px 0px 10px;
         }
     }
 }

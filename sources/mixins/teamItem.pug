@@ -9,8 +9,4 @@ mixin teamItem(teamObject)
     .team-item-social
       each item in teamObject.socials
         a(href=item.socialUrl, target="_blank")
-          img.team-social(src=require('./styles/images/'+item.imgName), alt=item.name)   
-      
-         
-      
-    
+          img.team-social(src=require('./styles/images/'+item.imgName), alt=item.name)
