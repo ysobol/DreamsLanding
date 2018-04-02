@@ -10,6 +10,7 @@ const css = require('./webpack/css');
 const extractCSS = require('./webpack/css.extract');
 const images = require('./webpack/images');
 const babel = require('./webpack/babel');
+const awesome = require('./webpack/awesome');
 
 const PATHS = {
     source: path.join(__dirname, 'sources'),
@@ -41,9 +42,10 @@ const common = merge([{
             }),
         ]
     },
+    awesome(),
     pug(),
     babel(),
-    images()
+    images(),
 ]);
 
 module.exports = function(env) {

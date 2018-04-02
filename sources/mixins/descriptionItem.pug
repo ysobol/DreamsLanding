@@ -2,7 +2,7 @@ include ../constants/constants
 mixin descriptionItem(imgName, title)
   .expertice-item
     .img-container
-      img.experticeImage(src=require('./styles/images/'+imgName), alt=title)
+      i(class=imgName)      
     .text-container
       h3.title.title-sub=title
       .expertice-description=DUMMY_DESCRIPTION

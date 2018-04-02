@@ -1,17 +1,17 @@
 [{
-        "imgName": "settings.png",
+        "imgName": "fa fa-cog fa-2x",
         "label": "Custom setup"
     },
     {
-        "imgName": "star.png",
+        "imgName": "fa fa-star fa-2x",
         "label": "All stur support team"
     },
     {
-        "imgName": "cloud.png",
+        "imgName": "fa fa-mixcloud fa-2x",
         "label": "Cloud control"
     },
     {
-        "imgName": "lock.png",
+        "imgName": "fa fa-unlock-alt fa-2x",
         "label": "Top notch security"
     }
 ]

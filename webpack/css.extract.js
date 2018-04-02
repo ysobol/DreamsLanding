@@ -15,7 +15,7 @@ module.exports = function() {
                 },
                 {
                     test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
-                    loader: 'url'
+                    loader: 'url-loader'
                 }
             ]
         },

@@ -5,17 +5,17 @@
         "socials": [{
                 "socialimgName": "https://twitter.com",
                 "name": "twiter",
-                "imgName": "team-tv.png"
+                "imgName": "fa fa-twitter-square fa-3x"
             },
             {
                 "socialimgName": "https://www.facebook.com",
                 "name": "facebook",
-                "imgName": "team-f.png"
+                "imgName": "fa fa-facebook-square fa-3x"
             },
             {
                 "socialimgName": "https://www.pinterest.com",
                 "name": "pinterest",
-                "imgName": "team-p.png"
+                "imgName": "fa fa-pinterest-square fa-3x"
             }
         ]
     },
@@ -26,17 +26,17 @@
         "socials": [{
                 "socialimgName": "https://twitter.com",
                 "name": "twiter",
-                "imgName": "team-tv.png"
+                "imgName": "fa fa-twitter-square fa-3x"
             },
             {
                 "socialimgName": "https://www.facebook.com",
                 "name": "facebook",
-                "imgName": "team-f.png"
+                "imgName": "fa fa-facebook-square fa-3x"
             },
             {
                 "socialimgName": "https://plus.google.com",
                 "name": "google",
-                "imgName": "team-g.png"
+                "imgName": "fa fa-google-plus-square fa-3x"
             }
         ]
     },
@@ -47,12 +47,12 @@
         "socials": [{
                 "socialimgName": "https://www.facebook.com",
                 "name": "facebook",
-                "imgName": "team-f.png"
+                "imgName": "fa fa-facebook-square fa-3x"
             },
             {
                 "socialimgName": "https://www.pinterest.com",
                 "name": "pinterest",
-                "imgName": "team-p.png"
+                "imgName": "fa fa-pinterest-square fa-3x"
             }
         ]
     }
