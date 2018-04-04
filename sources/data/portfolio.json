@@ -1,13 +1,13 @@
 [{
-        "imgName": "settings.png",
+        "imgName": "fa fa-cog fa-2x",
         "title": "sail away your worries"
     },
     {
-        "imgName": "star.png",
+        "imgName": "fa fa-star fa-2x",
         "title": "all-star sdupport team"
     },
     {
-        "imgName": "pie.png",
+        "imgName": "fa fa-codiepie fa-2x",
         "title": "fully integrated service"
     }
 ]
